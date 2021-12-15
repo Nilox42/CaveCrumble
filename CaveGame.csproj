@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1D477690-91DE-4DCD-B38D-F4175356C0C5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CaveGame</RootNamespace>
+    <AssemblyName>RobinGame</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HighscoreNew\Highscore.cs" />
+    <Compile Include="HighscoreCurrent\HighscoreData.cs" />
+    <Compile Include="Game.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game.Designer.cs">
+      <DependentUpon>Game.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HighscoreCurrent\Highscore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HighscoreCurrent\Highscore.Designer.cs">
+      <DependentUpon>Highscore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\User.cs" />
+    <Compile Include="User\UserHandler.cs" />
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HighscoreCurrent\Highscore.resx">
+      <DependentUpon>Highscore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master.resx">
+      <DependentUpon>Master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game.resx">
+      <DependentUpon>Game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Background\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Textures\rock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Textures\spieler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Textures\spielerXYZ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Textures\steinXYZ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4d3b22a2cd86b926b3eaf2e27175b013.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wandrechts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wandlinks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocks1_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocks1_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocks1_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Background\mainmenu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Textures\stein.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Textures\Herz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buttonstart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buttonstart1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonstartt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonstartclick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonbeenden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonbeendenclick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonhighscore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonhighscoreclick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btstart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btstartclick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btmain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btmainclick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leben.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bigstone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\buttons\Start-animation.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Textures\buttonfragezeichen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Textures\bigstone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Textures\bigstoneOld.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Textures\buttonbeenden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Textures\buttonbeendenclick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Textures\buttonbeendenclickgross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Textures\buttonbeendengross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Textures\buttonfragezeichenclick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Textures\buttonhighscore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Textures\buttonhighscoreclick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Textures\buttonmain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Textures\buttonmainclick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Textures\buttonresume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Textures\buttonresumeclick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Textures\buttonstartclick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Textures\Fireball.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Textures\firebollto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Textures\hintergrundohnedrache.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Textures\lautleisehintergrund.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Content\Textures\pausemenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonbeenden1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonbeendenclick1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonbeendenclickgross1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonbeendengross1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonfragezeichen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonfragezeichenclick1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonhighscore1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonhighscoreclick1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonmain1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonmainclick1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonresume1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonresumeclick1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonstartclick1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firebollto1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hintergrundohnedrache1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lautleisehintergrund1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pausemenu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abenteurer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonclear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonclearclick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonExit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonExitclick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonExitclickgross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonExitgross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonfragezeichenGIF.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonladen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonladenclick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonschliessenclick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonspeichern.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonspeichernclick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\storypanel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonschliessenclick1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonschliessenn.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

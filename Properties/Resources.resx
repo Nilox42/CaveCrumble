@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="buttonschliessenclick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonschliessenclick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonmain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\buttonmain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonExit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonExit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rocks1_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rocks1_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stein" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\stein.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spieler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\spieler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Buttonstart2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Buttonstart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hintergrundohnedrache1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hintergrundohnedrache1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonbeendengross1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonbeendengross1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="firebollto1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\firebollto1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonfragezeichen2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonfragezeichen1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Buttonstart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Buttonstart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btmain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btmain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonbeenden1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\buttonbeenden.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rocks1_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rocks1_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonfragezeichenclick1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonfragezeichenclick1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rocks1_112" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rocks1_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonresume" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\buttonresume.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonfragezeichen1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\buttonfragezeichen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boden" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boden.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boden2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boden.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonstartt2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonstartt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lautleisehintergrund" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\lautleisehintergrund.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boden1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boden.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonbeenden" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonbeenden.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonmain1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonmain1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rocks1_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rocks1_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonmainclick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\buttonmainclick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonhighscore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonhighscore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonbeendenclickgross1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonbeendenclickgross1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mainmenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Background\mainmenu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wandrechts1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wandrechts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btstartclick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btstartclick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spielerXYZ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\spielerXYZ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonExitclickgross" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonExitclickgross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonExitclick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonExitclick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Background\background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="leben" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\leben.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wandrechts2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wandrechts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Herz1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\Herz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonspeichern" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonspeichern.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bigstone1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\bigstone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonbeendenclick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonbeendenclick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="firebollto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\firebollto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonbeendengross" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\buttonbeendengross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonstartt1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonstartt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonresumeclick1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonresumeclick1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4d3b22a2cd86b926b3eaf2e27175b013" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4d3b22a2cd86b926b3eaf2e27175b013.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rocks1_122" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rocks1_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Buttonstart11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Buttonstart1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4d3b22a2cd86b926b3eaf2e27175b0132" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4d3b22a2cd86b926b3eaf2e27175b013.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spielerXYZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\spielerXYZ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wandlinks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wandlinks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonstartclick3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonstartclick1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonhighscore1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\buttonhighscore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pausemenu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pausemenu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonhighscore2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonhighscore1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spieler1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\spieler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rocks1_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rocks1_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonresume1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonresume1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Buttonstart1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Buttonstart1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonstartt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonstartt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4d3b22a2cd86b926b3eaf2e27175b0131" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4d3b22a2cd86b926b3eaf2e27175b013.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="steinXYZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\steinXYZ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonschliessenclick1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonschliessenclick1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonfragezeichenclick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\buttonfragezeichenclick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonExitgross" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonExitgross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Start-animation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\buttons\Start-animation.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonclearclick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonclearclick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pausemenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\pausemenu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonresumeclick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\buttonresumeclick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonbeendenclick2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonbeendenclick1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btstart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btstart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonbeenden2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonbeenden1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonspeichernclick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonspeichernclick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="storypanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\storypanel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonclear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonclear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btmainclick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btmainclick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonfragezeichenGIF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonfragezeichenGIF.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stein1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\stein.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonhighscoreclick2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonhighscoreclick1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Herz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\Herz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="abenteurer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\abenteurer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rocks1_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rocks1_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Buttonstart12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Buttonstart1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonmainclick1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonmainclick1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonladen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonladen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hintergrundohnedrache" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\hintergrundohnedrache.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Buttonstart3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Buttonstart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fireball" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\Fireball.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonstartclick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonstartclick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lautleisehintergrund1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lautleisehintergrund1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bigstoneOld" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\bigstoneOld.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bigstone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bigstone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonbeendenclickgross" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\buttonbeendenclickgross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="steinXYZ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\steinXYZ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonladenclick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonladenclick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonbeendenclick1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\buttonbeendenclick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rocks1_121" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rocks1_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rocks1_111" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rocks1_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonhighscoreclick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonhighscoreclick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wandlinks1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wandlinks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonfragezeichen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\buttonfragezeichen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wandlinks2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wandlinks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonstartclick1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonstartclick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonstartclick2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\buttonstartclick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonhighscoreclick1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\Content\Textures\buttonhighscoreclick.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wandrechts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wandrechts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonschliessenn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonschliessenn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
