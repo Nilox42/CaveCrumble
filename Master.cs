@@ -8,15 +8,20 @@ namespace CaveGame
 {
     public partial class MasterForm : Form
     {
+        #region instances
         MainMenu hauptmenue;
         GameForm spiel;
         Highscore highscore;
         Login login;
+        #endregion
 
+        #region music player and points
         WMPLib.WindowsMediaPlayer MediaPlayer = new WMPLib.WindowsMediaPlayer();
         
-        List<int> points = new List<int>();            
+        List<int> points = new List<int>();
+        #endregion
 
+        #region constructor
         public MasterForm()
         {
             InitializeComponent();
@@ -24,6 +29,9 @@ namespace CaveGame
             MediaPlayer.URL = Application.StartupPath + @"\Content\Audio\MainMenuMusik.mp3";
             MediaPlayer.settings.volume = 10;
         }
+        #endregion
+
+        #region load masterform
         private async void MasterForm_Load(object sender, EventArgs e)
         {
             // Main menü laden nachdem Master Form geladen ist
@@ -35,6 +43,7 @@ namespace CaveGame
 
             this.Hide();
         }
+        #endregion
 
         #region Game
         public void startGame()
@@ -108,7 +117,7 @@ namespace CaveGame
                 hauptmenue.Dispose();
             }
 
-            highscore = new Highscore(this, points);
+            highscore = new Highscore(this);
             highscore.Show();
 
         }

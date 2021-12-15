@@ -47,8 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HighscoreNew\Highscore.cs" />
-    <Compile Include="HighscoreCurrent\HighscoreData.cs" />
+    <Compile Include="HighscoreCurrent\HighscoreN.cs" />
     <Compile Include="Game.cs">
       <SubType>Form</SubType>
     </Compile>

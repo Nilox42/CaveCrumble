@@ -20,6 +20,7 @@ namespace CaveGame
             this.mf = mf;
         }
 
+        #region Login
         private void btlogin_Click(object sender, EventArgs e)
         {
             LoginResult res = UserHandler.login(tbusername.Text, tbpassword.Text);
@@ -38,7 +39,9 @@ namespace CaveGame
                     }
             }
         }
-
+        #endregion
+        
+        #region Register
         private void btregister_Click(object sender, EventArgs e)
         {
             RegisterResult res = UserHandler.register(tbusername.Text, tbpassword.Text);
@@ -63,5 +66,6 @@ namespace CaveGame
                     break;
             }
         }
+        #endregion
     }
 }

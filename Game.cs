@@ -100,7 +100,7 @@ namespace CaveGame
         private void TrackBar1_Scroll(object sender, EventArgs e)
         {
             GameForm.SMediaPlayer.controls.play();            
-            GameForm.SMediaPlayer.settings.volume = trackBar1.Value;
+            GameForm.SMediaPlayer.settings.volume = tbSound.Value;
         }
         #endregion
 
@@ -137,7 +137,7 @@ namespace CaveGame
             {
                 if (pausemenuisopen == false)
                 {
-                    trackBar1.Hide();
+                    tbSound.Hide();
 
                     pPause.Show();
                     tick.Stop();
@@ -146,6 +146,7 @@ namespace CaveGame
                 }
                 else
                 {
+                    tbSound.Show();
                     tDifficulty.Start();
                     tick.Start();
                     pPause.Hide();
@@ -411,6 +412,9 @@ namespace CaveGame
             tDifficulty.Stop();
             SMediaPlayer.controls.stop();
 
+            HighscoreN.addHighscore(UserHandler.currentuser.username, seconds);
+            HighscoreN.save();
+
             mf.gameOver(seconds);
             mf.showhighscore();
         }
@@ -423,7 +427,7 @@ namespace CaveGame
             tick.Stop();
             tDifficulty.Stop();
             SMediaPlayer.controls.stop();
-
+            tbSound.Enabled = true;
             System.Media.SoundPlayer sound = new System.Media.SoundPlayer(Application.StartupPath + @"\Content\Audio\buttonclick.wav");
             sound.Play();
         }
@@ -433,8 +437,7 @@ namespace CaveGame
             tDifficulty.Start();
             tick.Start();
             pPause.Hide();
-            trackBar1.Enabled = false;
-            trackBar1.Enabled = true;
+            tbSound.Enabled = false;
         }
         #endregion
 

@@ -14,8 +14,10 @@ namespace CaveGame
         [STAThread]
         static void Main()
         {
-            UserHandler.Init(Application.StartupPath + @"user.xml");
+            UserHandler.Init(Application.StartupPath + @"/user.xml");
             UserHandler.load();
+
+            HighscoreN.load();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

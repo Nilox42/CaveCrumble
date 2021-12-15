@@ -178,9 +178,10 @@ namespace CaveGame
             User user = getUserByUsername(username);
             if (user == null)
             {
-                if (createUser(username, password) != null)
+                User regi = createUser(username, password);
+                if (regi != null)
                 {
-                    currentuser = user;
+                    currentuser = regi;
                     return RegisterResult.succes;
                 }
                 else

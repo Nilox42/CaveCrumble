@@ -10,6 +10,7 @@ namespace CaveGame
 {
     public class User
     {
+        #region save sections
         [XmlElement("ID")]
         public int id { get; set; }
 
@@ -19,8 +20,8 @@ namespace CaveGame
         [XmlElement("Password")]
         public string password { get; set; }
 
+        #endregion
 
-        //Your Code
 
         public User(int id, string username, string password)
         {
@@ -30,18 +31,7 @@ namespace CaveGame
         }
         public User() { }//Used by XML Serialiser to construct an instance of User
 
-        public string tryConstelation(string tryusername, string trypassword)
-        {
-            if (username != tryusername)
-            {
-                return "Nope 1";
-            }
-            if (password != trypassword)
-            {
-                return "Nope 2";
-            }
+ 
 
-            return "Succes";
-        }
     }
 }

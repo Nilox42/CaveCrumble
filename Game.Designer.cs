@@ -52,8 +52,8 @@
             this.pbbigstone = new System.Windows.Forms.PictureBox();
             this.pPause = new System.Windows.Forms.Panel();
             this.pbNext = new System.Windows.Forms.PictureBox();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.tbSound = new System.Windows.Forms.TrackBar();
             ((System.ComponentModel.ISupportInitialize)(this.pbspieler)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbstone3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbstone4)).BeginInit();
@@ -73,8 +73,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbbigstone)).BeginInit();
             this.pPause.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbNext)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbSound)).BeginInit();
             this.SuspendLayout();
             // 
             // lbscore
@@ -248,11 +248,11 @@
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
             // 
-            // pbschließen
+            // pbclose
             // 
             this.pbclose.Image = global::CaveGame.Properties.Resources.buttonExit;
             this.pbclose.Location = new System.Drawing.Point(22, 218);
-            this.pbclose.Name = "pbschließen";
+            this.pbclose.Name = "pbclose";
             this.pbclose.Size = new System.Drawing.Size(173, 55);
             this.pbclose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbclose.TabIndex = 59;
@@ -322,19 +322,19 @@
             this.pPause.BackColor = System.Drawing.Color.Transparent;
             this.pPause.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pPause.BackgroundImage")));
             this.pPause.Controls.Add(this.pbNext);
-            this.pPause.Controls.Add(this.trackBar1);
+            this.pPause.Controls.Add(this.tbSound);
             this.pPause.Controls.Add(this.pbclose);
             this.pPause.Location = new System.Drawing.Point(833, 283);
             this.pPause.Name = "pPause";
             this.pPause.Size = new System.Drawing.Size(215, 338);
             this.pPause.TabIndex = 65;
             // 
-            // pbWeiter
+            // pbNext
             // 
             this.pbNext.BackColor = System.Drawing.SystemColors.GrayText;
-            this.pbNext.Image = ((System.Drawing.Image)(resources.GetObject("pbWeiter.Image")));
+            this.pbNext.Image = ((System.Drawing.Image)(resources.GetObject("pbNext.Image")));
             this.pbNext.Location = new System.Drawing.Point(22, 84);
-            this.pbNext.Name = "pbWeiter";
+            this.pbNext.Name = "pbNext";
             this.pbNext.Size = new System.Drawing.Size(173, 53);
             this.pbNext.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbNext.TabIndex = 62;
@@ -342,18 +342,6 @@
             this.pbNext.Click += new System.EventHandler(this.PbWeiter_Click);
             this.pbNext.MouseLeave += new System.EventHandler(this.pbWeiter_MouseLeave);
             this.pbNext.MouseHover += new System.EventHandler(this.pbWeiter_MouseHover);
-            // 
-            // trackBar1
-            // 
-            this.trackBar1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.trackBar1.Location = new System.Drawing.Point(22, 154);
-            this.trackBar1.Maximum = 100;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(173, 45);
-            this.trackBar1.TabIndex = 63;
-            this.trackBar1.TabStop = false;
-            this.trackBar1.Value = 10;
-            this.trackBar1.Scroll += new System.EventHandler(this.TrackBar1_Scroll);
             // 
             // axWindowsMediaPlayer1
             // 
@@ -366,7 +354,19 @@
             this.axWindowsMediaPlayer1.TabStop = false;
             this.axWindowsMediaPlayer1.Visible = false;
             // 
-            // SpielForm
+            // tbSound
+            // 
+            this.tbSound.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tbSound.Location = new System.Drawing.Point(22, 154);
+            this.tbSound.Maximum = 100;
+            this.tbSound.Name = "tbSound";
+            this.tbSound.Size = new System.Drawing.Size(173, 45);
+            this.tbSound.TabIndex = 63;
+            this.tbSound.TabStop = false;
+            this.tbSound.Value = 10;
+            this.tbSound.Scroll += new System.EventHandler(this.TrackBar1_Scroll);
+            // 
+            // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -400,7 +400,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "SpielForm";
+            this.Name = "GameForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CaveCrumble";
             this.Load += new System.EventHandler(this.Game_Load);
@@ -424,8 +424,8 @@
             this.pPause.ResumeLayout(false);
             this.pPause.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbNext)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbSound)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -456,7 +456,7 @@
         private System.Windows.Forms.Panel pPause;
         private System.Windows.Forms.PictureBox pbNext;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
-        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.TrackBar tbSound;
     }
 }
 

@@ -10,28 +10,16 @@ namespace CaveGame
 
     public partial class Highscore : Form
     {
-        List<int> highscores;
         MasterForm mf;
 
-        public Highscore(MasterForm mf0,List<int> punktzahl0)
+        public Highscore(MasterForm mf0)
         {
             InitializeComponent();
             mf = mf0;
-            highscores = punktzahl0;
         }
         private void Form3_Load(object sender, EventArgs e)
         {
-            highscores.Sort();
-            highscores.Reverse();
-
-            #region RichTextBox
-            int index = 1;
-            foreach(int i in highscores)
-            {
-                rtbHighscores.Text = rtbHighscores.Text + "               Place " + index+": " + i.ToString()+ "Seconds" + "\n";
-                index++;
-            }
-            #endregion
+           
         }
 
         #region ESC
@@ -68,19 +56,7 @@ namespace CaveGame
         #region Save Button
         private void pbSpeichern_Click(object sender, EventArgs e)
         {
-            try
-            {
-                HighscoreData hd = new HighscoreData();
-                string speicherHighscore = Directory.GetCurrentDirectory();
-
-                hd.rtbHighscores = rtbHighscores.Text;
-
-                hd.save(Path.Combine(speicherHighscore + @"\Content\highscore") + "\\HighscoreDaten.txt");
-
-            }
-            catch (Exception ex)
-            {
-            }
+            HighscoreN.save();
         }
 
         private void pbSpeichern_MouseHover(object sender, EventArgs e)
@@ -98,19 +74,16 @@ namespace CaveGame
         // load data to rtb
         private void pbLaden_Click(object sender, EventArgs e)
         {
-            try
+            HighscoreN.load();
+
+            string res = "";
+            List<HighscoreN> scores = HighscoreN.getHighscoresSorted();
+            foreach (HighscoreN sore in scores)
             {
-                string savelocation = Directory.GetCurrentDirectory();
-                HighscoreData hd = new HighscoreData();
-
-                hd = hd.load(Path.Combine(savelocation + @"\Content\highscore") + "\\HighscoreDaten.txt");
-
-                rtbHighscores.Text = hd.rtbHighscores;
+                res += sore.username + ":" + sore.highscore + "Points" + System.Environment.NewLine;
             }
-            catch (Exception ex)
-            {
 
-            }
+            rtbHighscores.Text = res;
         }
 
         private void pbLaden_MouseHover(object sender, EventArgs e)

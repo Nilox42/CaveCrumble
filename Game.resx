@@ -121,7 +121,7 @@
   <data name="pPause.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAANcAAAFUCAYAAAC3Lql3AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAuI1JREFUeF7t/WeTLtd1rQv2L+kvN7qPN6K3ICGSIlFVewMEARDekYT3lgRJ0AEE
+        wAAADsABataJCQAAuI1JREFUeF7t/WeTLtd1rQv2L+kvN7qPN6K3ICGSIlFVewMEARDekYT3lgRJ0AEE
         QA8Q9N5TonSkI+nInqN7rmkTt6OjI9r+nOrxjJxj7flmZdV+a3NDVQTzw4iVZmXmMnOsOddcJv93+/v7
         vzP4x//f5fsrfr8xl4nTjMWLpxVLhb3i9wtzmTjNWLx4WrFU2Ct+vzCXidOMxYunFUuFveL3C3OZOM1Y
         vHhaMS/o/+F///YVr3LM63wuE6cZixdPK+YFvVQZK15dmNf5XCZOMxYvnlbMC3qpMla8ujCv87lMnGYs
@@ -911,11 +911,11 @@
         /WcR6y//b1uQa8WKFRcHK7lWrHiFsJJrxYpXCCu5Vqx4RXD5/v8fv16d0SBO6RgAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pbWeiter.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pbNext.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAKUAAAA1CAMAAAAXk9urAAAABGdBTUEAALGPC/xhBQAAAEJQTFRFFhcw
         MSZKIh47Hhw4FxcyKiJCGxo0Jh8/Ix47JiA/Gxk1Ih07LSNGIB06HRo3GRg0FxgyLSRGIRw6JB8+Gxk0
-        GRgzOfr22QAAAAlwSFlzAAAOwgAADsIBFShKgAAAAXJJREFUaEPtlttOw0AMRNNNGwiUQrj8/69iz86m
+        GRgzOfr22QAAAAlwSFlzAAAOwAAADsABataJCQAAAXJJREFUaEPtlttOw0AMRNNNGwiUQrj8/69iz86m
         7iZRQ2ShqPJ58gxOfYpEaRN4ctg7YelHWPoRln6EpR9h6UdY+hGWflSWiBb2iXGkRX1kGjlJyVE3Os4y
         PnGcRV9LeGYcyVcexRI/7DkarINho+XSxiNYVheKpToYzIaF7YLl/fdRXVHQcxYQw9LT8qXv+/x810lb
         LF+l7vu8KZQLaJUzarabLasrCnrOAqIF7e1fDyqlXBjJL82w2TIjxZWqQbSgXbB8a6vPy0vS3ybDXiw3
